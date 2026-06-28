@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_lesson/quote_screen.dart';
+import 'package:riverpod_lesson/screens/count_screen.dart';
+import 'package:riverpod_lesson/screens/quote_screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: QuoteScreen(),
+      home: CountScreen(),
     );
   }
 }

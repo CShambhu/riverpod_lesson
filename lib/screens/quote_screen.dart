@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_lesson/quote_provider.dart';
+import 'package:riverpod_lesson/providers/quote_provider.dart';
 
 class QuoteScreen extends ConsumerWidget {
   const QuoteScreen({super.key});
