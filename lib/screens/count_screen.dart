@@ -7,6 +7,14 @@ class CountScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.listen(counterProvider, (previous, next) {
+      if (next == 10) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(const SnackBar(content: Text("Congratulations!")));
+      }
+    });
+
     final count = ref.watch(counterProvider);
     return Scaffold(
       appBar: AppBar(title: Text("Count Screen")),
